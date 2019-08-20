@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react"
+import { Link } from "gatsby"
 
-export default function index() {
-    return (
-        <div>
-            <h1>Mi primer sitio de GATSBYJS</h1>
-        </div>
-    )
-}
+import { Layout, SEO } from "../components"
+
+const IndexPage = () => (
+  <Layout>
+    <SEO title="Home" />
+    <h1>Hi people</h1>
+    <p>Welcome to your new Gatsby site.</p>
+    <p>Now go build something great.</p>
+    <Link to="/page-2/">Go to page 2</Link>
+  </Layout>
+)
+
+export default IndexPage

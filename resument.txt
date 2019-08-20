@@ -1,0 +1,8 @@
+Un proyecto base en gatsby se instala con las sig. dependencias
+    npm i gatsby react react-dom
+y si queres un proyecto base con todo config. corremos
+    npm i -g gatsby-cli
+    gatsby new {nombreDelProyecto}
+y si queremos usar una starter {clon}
+    gatsby new {miProyecto} {nombreDelCreador/nombreDelProyecto}
+
