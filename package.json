@@ -1,0 +1,26 @@
+{
+  "name": "GatsbyJS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gatsby develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JhurgenMrz/GatsbyJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JhurgenMrz/GatsbyJS/issues"
+  },
+  "homepage": "https://github.com/JhurgenMrz/GatsbyJS#readme",
+  "dependencies": {
+    "gatsby": "^2.13.68",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
