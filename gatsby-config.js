@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `City-Care`,
-    description: `This is a e-comers of Hillsong-Buenos-Aires `,
+    description: `Este es un e-commerce de HillsongBA`,
     author: `@jhurgenmrz`,
   },
   plugins: [
@@ -27,6 +27,13 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: 'src/utils/typography.js'
+      }
+    }
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -5,4 +5,4 @@ y si queres un proyecto base con todo config. corremos
     gatsby new {nombreDelProyecto}
 y si queremos usar una starter {clon}
     gatsby new {miProyecto} {nombreDelCreador/nombreDelProyecto}
-
+Gatsby internamente utiliza otro router llamado Reach Router
