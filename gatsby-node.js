@@ -1,8 +1,39 @@
-const path = require('path')
+const path = require("path")
 
-exports.createPages = async ({graphql, actions}) => {
-    const {createPages} = actions
-    const productTemplate = path.resolve(`src/templates/Product.js`)
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+  const productTemplate = path.resolve(`src/templates/Product.js`)
 
-    
+  const result = await graphql(`
+    query GET_SKUS{
+      allStripeSku {
+        edges {
+          node {
+            id
+            product {
+              name
+              metadata {
+                img
+                description
+                wear
+              }
+            }
+            price
+          }
+        }
+      }
+    }
+  `)
+    if(result.errors){
+        throw result.errors
+    }
+
+    result.data.allStripeSku.edges.forEach(({node})=>{
+        createPage({
+            path: `${node.id}`,
+            component: productTemplate,
+            context: node
+        })
+    })
+
 }
